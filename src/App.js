@@ -1,9 +1,18 @@
-import React from "react"
+import React from "react";
+import CreditCard from "./CreditCard";
 
-function App() {
+function App(props) {
+  const bankName = "Big Bank, Inc.";
+
+  const cardNum = {
+    p1: 1234,
+    p2: 5645,
+    p3: 8765,
+    p4: 4321,
+  };
   return (
     <div className="App">
-     <h1>My React App</h1>
+      <CreditCard bank={bankName} />
     </div>
   );
 }
